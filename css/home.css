@@ -2178,6 +2178,15 @@ button {
   .search-container .zx-search {
     width: 90%;
   }
+  .sp-offers .sp-offers-header .show-more {
+    width: 150px;
+  }
+  .sp-offers .sp-offers-header h3 {
+    font-size: 21px;
+  }
+  .card::after {
+    display: none;
+  }
   .subscribe .sub-lorem p {
     font-size: 20px;
   }

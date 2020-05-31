@@ -2178,6 +2178,9 @@ button {
   .search-container .zx-search {
     width: 90%;
   }
+  .header .owl-carousel .owl-dots {
+    bottom: 13px;
+  }
   .sp-offers .sp-offers-header .show-more {
     width: 150px;
   }

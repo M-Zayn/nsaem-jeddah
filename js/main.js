@@ -36,6 +36,13 @@ $(function() {
     $(".nav-list .list li:first-child").on("click", function() {
       $(".nav-list .sub-list").slideToggle();
     });
+    $(".nav-list .sub-list").on("click", function(e) {
+      e.stopPropagation();
+    });
+    $(".nav-list .listed").on("click", function () {
+      $(".nav-list .sub-list-copy").slideToggle();
+      $(this).toggleClass("active");
+    });
   
     
     $('.header .owl-carousel').owlCarousel({

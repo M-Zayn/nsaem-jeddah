@@ -1811,7 +1811,7 @@ button {
   }
   .nav-list .buy-options button .counter {
     padding: 5px 0 0 0;
-    right: -1px;
+    right: 1px;
     bottom: -2px;
   }
   .nav-bar .nav-search {

@@ -826,7 +826,7 @@ button {
 }
 
 .nav-list .listed::after {
-  content: "";
+  content: "";
   font-family: "Linearicons-Free";
   font-size: 10px;
   color: #000;
@@ -842,23 +842,46 @@ button {
 [dir="ltr"] .nav-list .listed::after {
   left: unset;
   right: 0;
-}
-
-.nav-list .listed.active {
-  color: #d6022a !important;
-}
-
-.nav-list .listed.active::after {
-  content: "";
-}
-
-[dir="ltr"] .nav-list .listed.active::after {
   content: "";
 }
 
+.nav-list .listed:hover {
+  color: #d6022a;
+}
+
+.nav-list .listed:hover .sub-list-copy {
+  opacity: 1;
+  visibility: visible;
+  right: 105%;
+}
+
+[dir="ltr"] .nav-list .listed:hover .sub-list-copy {
+  right: unset;
+  left: 105%;
+}
+
 .nav-list .sub-list-copy {
-  display: none;
-  padding: 0 15px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 5px 15px;
+  position: absolute;
+  top: 0;
+  right: 115%;
+  min-width: 180px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 5px 0px #00000033;
+          box-shadow: 0px 0px 5px 0px #00000033;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+[dir="ltr"] .nav-list .sub-list-copy {
+  right: unset;
+  left: 115%;
 }
 
 /*------ navlist end ------*/

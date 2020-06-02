@@ -1783,6 +1783,21 @@ button {
   .upper-bar {
     display: none;
   }
+  .nav-bar .zx-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px 0 25px 0;
+  }
+  .nav-bar .logo-container {
+    width: unset;
+  }
+  .nav-bar .logo-container .logo {
+    width: 200px;
+  }
+  .nav-bar .logo-container .logo img {
+    content: url("../images/logo-mob.png");
+  }
   .nav-bar .nav-contact {
     display: none;
   }
@@ -1795,23 +1810,19 @@ button {
   .nav-list .buy-options .menu-icon, .nav-list .buy-options .search-icon {
     display: block;
   }
-  .nav-bar .logo-container .logo {
-    width: 160px;
-  }
-  .nav-bar .logo-container .logo img {
-    content: url("../images/logo-mob.png");
-  }
   .nav-list .buy-options {
     position: absolute;
-    top: -64px;
-    left: 0;
+    top: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .nav-list .buy-options button {
-    font-size: 21px;
+    font-size: 23px;
   }
   .nav-list .buy-options button .counter {
     padding: 5px 0 0 0;
-    right: 1px;
+    right: 2px;
     bottom: -2px;
   }
   .nav-bar .nav-search {
@@ -2035,6 +2046,9 @@ button {
             align-items: center;
     margin: 5px 0;
   }
+  .card .title {
+    text-align: center;
+  }
   .sp-offers .sp-offers-header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2256,15 +2270,6 @@ button {
   }
   .subscribe .sub-lorem span {
     font-size: 18px;
-  }
-}
-
-@media (max-width: 360px) {
-  .nav-bar .logo-container .logo {
-    width: 140px;
-  }
-  .nav-list .buy-options {
-    top: -57px;
   }
 }
 
